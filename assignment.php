@@ -39,23 +39,23 @@ for($i = $breads; $i >= 2; $i = $i - 2){
     //If samosapav price is greater than vadapav price 	
 	if($samosapav_price > $vadapav_price){
 	   if($samosa > 0){                //If samosa is available.
-       $Profit = $Profit + $samosapav_price;
-       $samosa--;
+         $Profit = $Profit + $samosapav_price;
+         $samosa--;
        } 
        else if($vada > 0){             //If vada is available. 
-       	$Profit = $Profit + $vadapav_price;
-        $vada--;
+       	 $Profit = $Profit + $vadapav_price;
+         $vada--;
        }
 	}
 	//If vadapav price is greater than vadapav price
 	else if($vadapav_price > $samosapav_price){  
-	   if($vada > 0){             // If vada is available.
-       $Profit = $Profit + $vadapav_price; 
-       $vada--;
+	   if($vada > 0){                 // If vada is available.
+         $Profit = $Profit + $vadapav_price; 
+         $vada--;
 	   }
-	   else if($samosa > 0){      //If samosa is available.
-	    $Profit = $Profit + $samosapav_price;
-	    $samosa--; 
+	   else if($samosa > 0){          //If samosa is available.
+	     $Profit = $Profit + $samosapav_price;
+	     $samosa--; 
 	   }
     }  
 }
